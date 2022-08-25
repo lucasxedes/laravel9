@@ -17,6 +17,7 @@
             {{ $user->name }} -
             {{ $user->email }} -
                 <a href="{{ route('users.show', $user->id) }}">Detalhes</a>
+                <a href="{{ route('users.edit', $user->id) }}">Editar</a>
         </li>
     @endforeach
 </ul>
