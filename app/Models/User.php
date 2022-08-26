@@ -53,4 +53,9 @@ class User extends Authenticatable
         //dd($users);
         return $users;
     }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }
