@@ -51,7 +51,7 @@ class User extends Authenticatable
             }
         })
         ->with('comments')
-        ->get();
+        ->paginate(1);
         //dd($users);
         return $users;
     }
